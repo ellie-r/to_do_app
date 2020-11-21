@@ -33,5 +33,17 @@ return function (ContainerBuilder $containerBuilder) {
         return $renderer;
     };
 
+    $container['dbConnection'] = function () {
+        $db = new \PDO('mysql:host=127.0.0.1;dbname=to_do_app', 'root', 'password');
+        $db->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
+        return $db;
+    };
+    $container['TaskModel'] = DI\Factory('\App\Factories\TaskModelFactory');
+    $container['HomePageController'] = DI\Factory('\App\Factories\HomePageControllerFactory');
+    $container['AddNewTaskController'] = DI\Factory('\App\Factories\AddNewTaskControllerFactory');
+    $container['MarkAsCompleteController'] = DI\Factory('\App\Factories\MarkAsCompleteControllerFactory');
+    $container['CompletedTasksPageController'] = DI\Factory('\App\Factories\CompletedTasksPageControllerFactory');
+    $container['DeleteTaskController'] = DI\Factory('\App\Factories\DeleteTaskControllerFactory');
+
     $containerBuilder->addDefinitions($container);
 };

@@ -2,32 +2,34 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Slim 4</title>
+    <title>To Do</title>
     <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-    <style>
-        body {
-            margin: 50px 0 0 0;
-            padding: 0;
-            width: 100%;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            text-align: center;
-            color: #aaa;
-            font-size: 18px;
-        }
-
-        h1 {
-            color: #719e40;
-            letter-spacing: -3px;
-            font-family: 'Lato', sans-serif;
-            font-size: 100px;
-            font-weight: 200;
-            margin-bottom: 0;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/d8f8b9f853.js" crossorigin="anonymous"></script>
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<h1>Slim</h1>
-<div>a microframework for PHP</div>
-    <p>Try <a href="http://www.slimframework.com">SlimFramework</a></p>
+    <h2>Add new Task</h2>
+    <div class="addTask">
+        <form  action="/addNewTask" method="post">
+            <label for="newTask">Add New Task</label>
+            <input type="text" id="newTask" name="newTask">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <h2>My Tasks</h2>
+    <ul class="tasks">
+    <?php
+        foreach($tasks as $task) {
+            echo '<li>
+                       <form method="post" action="/markAsComplete/' . $task['id'] . '">
+                            <input class="completeBox" type="submit" value =" ">
+                       </form><p>'
+                        . $task['name'] .
+                  '</p></li>';
+        };
+
+    ?>
+    </ul>
 </body>
 </html>
