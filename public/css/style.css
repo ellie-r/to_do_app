@@ -1,9 +1,28 @@
 body {
+    font-family: 'Gupter', serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
     font-family: 'Jost', sans-serif;
+    color: #1a0578;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.section {
+    background-color: whitesmoke;
+    padding: 20px;
+    display: inline-block;
+    margin: 15px 100px;
+    border-radius: 7px;
 }
 
 ul {
-    padding-left: 0;
+    display: inline-block;
+    margin: auto;
 }
 
 li {
@@ -15,18 +34,41 @@ li p {
     padding-left: 10px;
 }
 
-.completeBox {
-    background-color: white;
-    border-radius: 50%;
-    border: 2px solid black;
+.button {
+    background-color: #1a0578;
+    color: white;
+    border: 2px solid #1a0578;
+    border-radius: 5px;
 }
 
-.complete::after {
-    background-image: ;
+.button:hover {
+    background-color: #4d2ed6;
+    border: 2px solid #492ec4;
+}
+
+.completeBox {
+    background-color: #ffffff00;
+    border-radius: 50%;
+    border: 2px solid #ffffff00;
+    height: 25px;
+    width: 25px;
+}
+
+.incomplete {
+    background-image: url('../assets/circle.svg');
+    background-repeat: no-repeat;
+}
+
+.complete {
+    background-image: url('../assets/check.svg');
+    background-repeat: no-repeat;
 }
 
 .completeBox:hover {
-    background-color: gray;
+    background-image: url('../assets/check.svg');
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
 }
 
 .deleteTask {

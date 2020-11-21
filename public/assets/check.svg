@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="23px"
+   height="22px"
+   viewBox="0 0 23 22"
+   version="1.1"
+   id="svg854"
+   sodipodi:docname="check.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+  <defs
+     id="defs858" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="773"
+     id="namedview856"
+     showgrid="false"
+     inkscape:zoom="27.863636"
+     inkscape:cx="4.591354"
+     inkscape:cy="11"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg854" />
+  <title
+     id="title844">check-circle</title>
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+    <g
+       id="Artboard"
+       transform="translate(-1161.000000, -1444.000000)"
+       stroke="#000"
+       stroke-width="2">
+      <g
+         id="check-circle"
+         transform="translate(1162.000000, 1444.000000)">
+        <path
+           d="M20 10.07V11a10 10 0 1 1-5.93-9.14"
+           id="Shape"
+           style="stroke:#1a0578;stroke-opacity:1" />
+        <path
+           id="path847"
+           d="M21 2L10 13l-3-3"
+           style="fill:none;fill-opacity:1;stroke:#1a0578;stroke-opacity:1" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata852">
+    <rdf:RDF>
+      <rdf:Description
+         about="https://iconscout.com/legal#licenses"
+         dc:title="check,circle"
+         dc:description="check,circle"
+         dc:publisher="Iconscout"
+         dc:date="2017-09-15"
+         dc:format="image/svg+xml"
+         dc:language="en">
+        <dc:creator>
+          <rdf:Bag>
+            <rdf:li>Feather Icons</rdf:li>
+          </rdf:Bag>
+        </dc:creator>
+      </rdf:Description>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
