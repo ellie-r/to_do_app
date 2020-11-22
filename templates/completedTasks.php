@@ -8,6 +8,7 @@
     <link href="/css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+<section class="section">
 <h2>Completed Tasks</h2>
 <ul>
 <?php
@@ -26,6 +27,10 @@ foreach($completedTasks as $task) {
 }
 ?>
 </ul>
+</section>
+<form method="get" action="/">
+    <input class="button" type="submit" value ="View To Do Tasks">
+</form>
 <footer>
     <a href="https://iconscout.com/icons/check" target="_blank">Check Icon</a> by <a href="https://iconscout.com/contributors/feathericons" target="_blank">Feather Icons</a>
 </footer>

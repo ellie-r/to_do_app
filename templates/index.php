@@ -37,8 +37,12 @@
         <input class="button" type="submit" value ="View Complete Tasks">
     </form>
 <footer>
-    <a href="https://iconscout.com/icons/circle" target="_blank">Circle Icon</a> by <a href="https://iconscout.com/contributors/daniel-bruce">Daniel Bruce</a> on <a href="https://iconscout.com">Iconscout</a>
-    <a href="https://iconscout.com/icons/check" target="_blank">Check Icon</a> by <a href="https://iconscout.com/contributors/feathericons" target="_blank">Feather Icons</a>
+    <div>
+        <a href="https://iconscout.com/icons/circle" target="_blank">Circle Icon</a> by <a href="https://iconscout.com/contributors/daniel-bruce">Daniel Bruce</a> on <a href="https://iconscout.com">Iconscout</a>
+    </div>
+    <div>
+        <a href="https://iconscout.com/icons/check" target="_blank">Check Icon</a> by <a href="https://iconscout.com/contributors/feathericons" target="_blank">Feather Icons</a>
+    </div>
 </footer>
 </body>
 </html>
