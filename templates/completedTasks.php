@@ -14,14 +14,14 @@
 <?php
 foreach($completedTasks as $task) {
     echo '<li>
-            <form class="" method="post" action="/markAsUnComplete/' . $task['id'] . '">
-                 <input class="completeBox complete" type="submit" value =" ">
+            <form class="" method="get" action="/markAsIncomplete/' . $task['id'] . '">
+                 <input class="completeBox complete" type="submit" value ="">
             </form>
             <p>'
                 . strtoupper($task['name']) . '
             </p>
             <form class="deleteTask" method="post" action="/deleteTask/' . $task['id'] . '">
-                 <input class="deleteBox button" type="submit" value ="x">
+                 <input class="deleteBox button" type="submit" value ="X">
             </form>
           </li>';
 }
@@ -32,7 +32,12 @@ foreach($completedTasks as $task) {
     <input class="button" type="submit" value ="View To Do Tasks">
 </form>
 <footer>
-    <a href="https://iconscout.com/icons/check" target="_blank">Check Icon</a> by <a href="https://iconscout.com/contributors/feathericons" target="_blank">Feather Icons</a>
+    <div>
+        <a href="https://iconscout.com/icons/circle" target="_blank">Circle Icon</a> by <a href="https://iconscout.com/contributors/daniel-bruce">Daniel Bruce</a> on <a href="https://iconscout.com">Iconscout</a>
+    </div>
+    <div>
+        <a href="https://iconscout.com/icons/check" target="_blank">Check Icon</a> by <a href="https://iconscout.com/contributors/feathericons" target="_blank">Feather Icons</a>
+    </div>
 </footer>
 </body>
 </html>

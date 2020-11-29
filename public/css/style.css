@@ -64,7 +64,14 @@ li p {
     background-repeat: no-repeat;
 }
 
-.completeBox:hover {
+.complete:hover {
+    background-image: url('../assets/circle.svg');
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+}
+
+.incomplete:hover {
     background-image: url('../assets/check.svg');
     background-repeat: no-repeat;
     width: 26px;

@@ -41,6 +41,12 @@ class TaskModel
         $query->execute([$id]);
     }
 
+    public function markAsIncomplete(int $id): Void
+    {
+        $query = $this->db->prepare('UPDATE `tasks` SET `complete` = 0 WHERE `id` = (?);');
+        $query->execute([$id]);
+    }
+
     public function deleteTask(int $id): Void
     {
         $query = $this->db->prepare('UPDATE `tasks` SET `deleted` = 1 WHERE `id` = (?);');

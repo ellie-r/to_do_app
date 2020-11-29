@@ -42,6 +42,7 @@ return function (ContainerBuilder $containerBuilder) {
     $container['HomePageController'] = DI\Factory('\App\Factories\HomePageControllerFactory');
     $container['AddNewTaskController'] = DI\Factory('\App\Factories\AddNewTaskControllerFactory');
     $container['MarkAsCompleteController'] = DI\Factory('\App\Factories\MarkAsCompleteControllerFactory');
+    $container['MarkAsIncompleteController'] = DI\Factory('\App\Factories\MarkAsIncompleteControllerFactory');
     $container['CompletedTasksPageController'] = DI\Factory('\App\Factories\CompletedTasksPageControllerFactory');
     $container['DeleteTaskController'] = DI\Factory('\App\Factories\DeleteTaskControllerFactory');
 

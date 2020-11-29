@@ -5,8 +5,9 @@ namespace App\Controllers;
 
 
 
+use App\Models\TaskModel;
 
-class MarkAsCompleteController
+class MarkAsIncompleteController
 {
     private $taskModel;
 
@@ -17,7 +18,7 @@ class MarkAsCompleteController
 
     public function __invoke($request, $response, $args)
     {
-        $this->taskModel->markAsComplete($args['id']);
-        return $response->withHeader('Location', '/');
+        $this->taskModel->markAsIncomplete($args['id']);
+        return $response->withHeader('Location', '/completeTasks');
     }
 }

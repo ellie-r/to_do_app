@@ -10,6 +10,7 @@ return function (App $app) {
     $app->get('/', 'HomePageController');
     $app->post('/addNewTask', 'AddNewTaskController');
     $app->post('/markAsComplete/{id}', 'MarkAsCompleteController');
+    $app->get('/markAsIncomplete/{id}', 'MarkAsIncompleteController');
     $app->get('/completeTasks', 'CompletedTasksPageController');
     $app->post('/deleteTask/{id}', 'DeleteTaskController');
 };
